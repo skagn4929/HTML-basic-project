@@ -43,6 +43,17 @@ html[data-dark="true"] .Layout-module__banner_area___CUXNe {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+#promotion_area {
+    border: 1px solid red;
+    background-color: red;
+    background-image: url("assets/images/main_add_events.jpg"); /* 이미지 경로 설정 */
+    background-size: cover; /* 이미지가 태그 크기에 맞게 조절 */
+    background-position: center; /* 배경 이미지를 가운데로 정렬 */
+    background-repeat: no-repeat; /* 배경 이미지가 반복되지 않게 설정 */
+    width: 100%; /* 예시로 width와 height 설정, 실제 값은 다를 수 있음 */
+    cursor: pointer;
+}
 .Layout-module__banner_area___CUXNe + .Layout-module__content_area___b_3TU {
     margin-top: 16px;
 }
@@ -62,7 +73,7 @@ html[data-dark="true"] .Layout-module__banner_area___CUXNe {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6519c842.png);
+    /* background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6519c842.png); */
     background-size: 435px 414px;
     background-position: -410px -27px;
     background-repeat: no-repeat;
