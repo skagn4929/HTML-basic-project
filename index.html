@@ -3,18 +3,449 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="assets/icon/favicon.ico">
     <title>NAVER</title>
+    <style type="text/css">
+        /* DA Alternative - Contents Style */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_public {
+            font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+            color: #202020;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: left;
+            position: relative;
+            width: 410px;
+            height: 100px;
+        }
+
+        .main_public p,
+        .main_public h1,
+        .main_public h2,
+        .main_public h3,
+        .main_public h4,
+        .main_public h5,
+        .main_public h6,
+        .main_public ul,
+        .main_public ol,
+        .main_public li,
+        .main_public dl,
+        .main_public dt,
+        .main_public dd,
+        .main_public table,
+        .main_public th,
+        .main_public td,
+        .main_public form,
+        .main_public fieldset,
+        .main_public legend,
+        .main_public input,
+        .main_public textarea,
+        .main_public button,
+        .main_public select {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_public img,
+        .main_public fieldset {
+            border: 0;
+        }
+
+        .main_public img {
+            vertical-align: top;
+        }
+
+        .main_public ul,
+        .main_public ol {
+            list-style: none;
+        }
+
+        .main_public em,
+        .main_public address,
+        .main_public i {
+            font-style: normal;
+        }
+
+        .main_public a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main_public button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+
+        .main_public .blind {
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            clip: rect(0, 0, 0, 0);
+        }
+
+        .main_public .main_public_wrap {
+            display: block;
+            overflow: hidden;
+            background-color: #f5f6f7;
+        }
+
+        .main_public .main_public_wrap:hover .main_public_image img {
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .main_public .main_public_wrap:hover .main_public_title {
+            text-decoration: underline;
+        }
+
+        .main_public .main_public_image {
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 160px;
+            height: 100px;
+            border-radius: 6px;
+        }
+
+        .main_public .main_public_image::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: inherit;
+            content: '';
+        }
+
+        .main_public .main_public_image img {
+            -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        .main_public .main_public_content {
+            overflow: hidden;
+            height: 100px;
+            padding: 5px 3px 0 18px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .main_public .main_public_subtitle {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 20px;
+            max-width: 141px;
+            padding: 0 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: -0.25px;
+            color: #fff;
+            background-color: #a0adb2;
+            vertical-align: top;
+        }
+
+        .main_public .main_public_title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.143;
+            letter-spacing: -0.25px;
+            color: #222122;
+        }
+
+        .main_public .main_public_desc {
+            margin-top: 6px;
+        }
+
+        .main_public .main_public_desc,
+        .main_public .main_public_desc2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: -0.25px;
+            color: #545454;
+        }
+
+        .main_public.type_win .main_public_title {
+            letter-spacing: -0.7px;
+        }
+
+        .main_public.type_win .main_public_desc,
+        .main_public.type_win .main_public_desc2 {
+            letter-spacing: -0.7px;
+        }
+
+        .main_public.type_dark .main_public_image::after {
+            border-color: rgba(255, 255, 255, 0.16);
+        }
+
+        .main_public.type_dark .main_public_wrap {
+            background-color: #2e2f30;
+        }
+
+        .main_public.type_dark .main_public_subtitle {
+            background-color: #6c7274;
+        }
+
+        .main_public.type_dark .main_public_title {
+            color: #f3f3f3;
+        }
+
+        .main_public.type_dark .main_public_desc,
+        .main_public.type_dark .main_public_desc2 {
+            color: #cbcbcb;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="wrap">
+        <div id="header">
+            <div id="topSearchWrap" class="header_inner">
+                <div id="special-logo" class="search_special_bg">
+                    <div class="event_bg">
+                        <picture class="event_bg_wrap"
+                            style="position: absolute; transform: scale(0.5); transform-origin: left top; top: 6px; left: 1px;">
+                            <img usemap="#special-logo-map"
+                                src="https://mml.pstatic.net/www/mobile/edit/20230927_1095/upload_1695748062629qXNuC.gif"
+                                alt="추석_28일_널뛰기"><map name="special-logo-map"><area
+                                    href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_brd&amp;fbm=0&amp;ie=utf8&amp;query=2023%EB%85%84+%EC%B6%94%EC%84%9D"
+                                    target="_blank" coords="124,0, 636,300"><area
+                                    href="https://blog.naver.com/naver_diary/223220817889" target="_blank"
+                                    coords="0,0, 110,300"></map>
+                        </picture>
+                    </div>
+                </div>
+                <div id="timeboard-ex" class="ad_area" style="min-width: 1340px; display: none;"> </div>
+                <div id="search_area" class="search_area is_focus" style="border-color: #839736">
+                    <div id="special-input-logo-ex" class="link_search_special" style="display:none"></div>
+                    <div class="search_group">
+                        <div id="search" class="search_group_inner">
+                            <h1 id="special-input-logo" class="search_logo"><a href="/"
+                                    class="link_naver type_image"><img
+                                        src="https://s.pstatic.net/static/www/mobile/edit/20230927_1095/upload_1695748272795ZRJ8G.png"
+                                        width="58" height="58" alt="NAVER"></a></h1>
+                            <form id="sform" name="search" role="search" action="https://search.naver.com/search.naver"
+                                method="get">
+                                <fieldset>
+                                    <legend class="blind">검색</legend> <input type="hidden" name="where"
+                                        value="nexearch"> <input type="hidden" id="sm" name="sm" value="top_hty"> <input
+                                        type="hidden" id="fbm" name="fbm" value="0"> <input type="hidden" id="acr"
+                                        name="acr" value="" disabled="disabled"> <input type="hidden" id="acq"
+                                        name="acq" value="" disabled="disabled"> <input type="hidden" id="qdt"
+                                        name="qdt" value="" disabled="disabled"> <input type="hidden" id="ie" name="ie"
+                                        value="utf8"> <input type="hidden" id="acir" name="acir" value=""
+                                        disabled="disabled"> <input type="hidden" id="os" name="os" value=""
+                                        disabled="disabled"> <input type="hidden" id="bid" name="bid" value=""
+                                        disabled="disabled"> <input type="hidden" id="pkid" name="pkid" value=""
+                                        disabled="disabled"> <input type="hidden" id="eid" name="eid" value=""
+                                        disabled="disabled"> <input type="hidden" id="mra" name="mra" value=""
+                                        disabled="disabled">
+                                    <div class="search_input_box"> <input id="query" name="query" type="search"
+                                            title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요." maxlength="255"
+                                            autocomplete="off" class="search_input" data-atcmp-element=""> </div>
+                                    <!-- onClick event -->
+                                    <button type="submit" class="btn_search" onclick=""> <span id="search-btn"
+                                            class="ico_btn_search type_color" style="background-color: #839736"></span>
+                                        <span class="blind">검색</span> </button>
+                                </fieldset>
+                            </form>
+                            <div class="search_box"> <button id="ke_kbd_btn" type="button" class="btn_keyboard"
+                                    aria-pressed="false"> <span class="keybord_text"> <span class="blind">입력도구</span>
+                                    </span> </button>
+                                <div id="_nx_kbd" style="display:none"></div> <button id="nautocomplete" type="button"
+                                    class="btn_arrow" data-atcmp-element=""> <span class="blind">자동완성/최근검색어펼치기</span>
+                                </button>
+                            </div>
+                            <div class="layer_atcmp" id="autoFrame" style="display:none">
+                                <div class="ly_atcmp" data-atcmp-element="">
+                                    <div class="api_atcmp_wrap">
+                                        <div class="atcmp_fixer _recent_layer" style="display:none">
+                                            <div class="atcmp_header _recent_header"> <strong class="tit">최근검색어</strong>
+                                                <div class="option"> <a role="button" href="#" class="item _delAll"
+                                                        aria-pressed="false">전체삭제</a> </div>
+                                            </div>
+                                            <div class="atcmp_container">
+                                                <ul class="kwd_lst _recent">
+                                                    <li class="item _item" data-rank="@rank@"
+                                                        data-template-type="history" data-keyword="@in_txt@"> <a
+                                                            href="#" class="kwd"> <span class="fix"><span
+                                                                    class="common_ico_kwd"><i
+                                                                        class="imsc ico_search"></i></span><span>@txt@</span></span>
+                                                        </a> <span class="etc"> <em class="date">@date@.</em> <a
+                                                                href="#" role="button" class="bt_item _del"
+                                                                aria-pressed="false"><i class="imsc ico_del">삭제</i></a>
+                                                        </span> </li>
+                                                </ul>
+                                                <div class="kwd_info kwd_off _offMsg" style="display:none">검색어 저장 기능이 꺼져
+                                                    있습니다.<br><span class="kwd_dsc">설정이 초기화 된다면 <a
+                                                            href="https://help.naver.com/alias/search/word/word_35.naver"
+                                                            class="kwd_help" data-clk="sly.help"
+                                                            target="_blank">도움말</a>을 확인해주세요.</span></div>
+                                                <div class="kwd_info kwd_none _recentNone" style="display:none">최근 검색어
+                                                    내역이 없습니다.<br><span class="kwd_dsc">설정이 초기화 된다면 <a
+                                                            href="https://help.naver.com/alias/search/word/word_35.naver"
+                                                            class="kwd_help" data-clk="sly.help"
+                                                            target="_blank">도움말</a>을 확인해주세요.</span></div>
+                                            </div>
+                                            <div class="atcmp_footer"> <span class="side_opt_area"> <span
+                                                        class="opt_item"><a
+                                                            href="https://help.naver.com/alias/search/word/word_35.naver"
+                                                            data-clk="sly.help" target="_blank">도움말</a></span> </span>
+                                                <span class="rside_opt_area"> <span class="opt_item"> <a href="#"
+                                                            class="close _keywordOnOff">자동저장 끄기</a> </span> </span>
+                                            </div>
+                                        </div>
+                                        <div class="atcmp_fixer _atcmp_layer" style="display:none">
+                                            <div class="atcmp_container _words">
+                                                <ul class="kwd_lst _kwd_list"> </ul>
+                                                <div class="atcmp_alert _alert">
+                                                    <div class="dsc_election">
+                                                        <p class="dsc"> <i class="imsc ico_election"></i><span
+                                                                class="_alert_passage"></span> </p> <span
+                                                            class="dsc_inner"> <span class="_alert_passage2"></span> <a
+                                                                href="#" class="link _alert_link"
+                                                                target="_blank">자세히보기</a> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="atcmp_plus _plus">
+                                                    <div class="dsc_plus"> <a
+                                                            href="https://help.naver.com/alias/search/word/word_16.naver"
+                                                            class="link_dsc" data-clk="sug.cxhelp" target="_blank">관심사를
+                                                            반영한 컨텍스트 자동완성<i class="imsc ico_help">도움말</i></a> </div>
+                                                    <div class="switch"> <a role="button" href="#"
+                                                            class="bt_switch active _plus_btn" aria-pressed="false"><i
+                                                                class="imsc ico_option">컨텍스트 자동완성</i></a> </div>
+                                                    <div class="layer_plus _plus_layer"> <strong class="tit">컨텍스트
+                                                            자동완성</strong>
+                                                        <div class="_plus_layer_isloggedin" style="display:none">
+                                                            <p class="dsc">ON/OFF 설정은<br>해당기기(브라우저)에 저장됩니다.</p>
+                                                            <div class="btn_area"> <a
+                                                                    href="https://help.naver.com/alias/search/word/word_16.naver"
+                                                                    class="btn btn_view" data-clk="sug.cxlink"
+                                                                    target="_blank">자세히</a> </div>
+                                                        </div>
+                                                        <div class="_plus_layer_isnotloggedin" style="display:none">
+                                                            <p class="dsc"><em class="txt">동일한 시간대/연령/남녀별</em> 사용자
+                                                                그룹의<br>관심사에 맞춰 자동완성을 제공합니다.</p>
+                                                            <div class="btn_area"> <a
+                                                                    href="https://nid.naver.com/nidlogin.login"
+                                                                    class="btn btn_login" data-clk="sug.cxlogin">로그인</a>
+                                                                <a href="https://help.naver.com/alias/search/word/word_16.naver"
+                                                                    class="btn btn_view" data-clk="sug.cxlink"
+                                                                    target="_blank">자세히</a>
+                                                            </div>
+                                                        </div> <a href="#" role="button"
+                                                            class="btn_close _plus_layer_close"><i
+                                                                class="imsc ico_close">컨텍스트 자동완성 레이어 닫기</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="atcmp_footer"> <span class="side_opt_area"> <span
+                                                        class="opt_item"><a
+                                                            href="https://help.naver.com/alias/search/word/word_17.naver"
+                                                            data-clk="sug.help" target="_blank">도움말</a></span> <span
+                                                        class="opt_item"><a
+                                                            href="https://help.naver.com/alias/search/word/word_18.naver"
+                                                            class="report" data-clk="sug.report"
+                                                            target="_blank">신고</a></span> </span> <span
+                                                    class="rside_opt_area"> <span class="opt_item"> <a href="#"
+                                                            class="close _suggestOnOff">자동완성 끄기</a> </span> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-right-banner"><a
+                        href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcsearchright&amp;campaign_id=2309-cue-001&amp;material=0927_v2&amp;target=https%3A%2F%2Fcue.search.naver.com%2F%3Ffrom%3Dda_anniv_0927_v2"
+                        class="link_search_banner" target="_blank"><img
+                            src="https://s.pstatic.net/static/www/mobile/edit/20230926_1095/upload_1695725424208jeqEJ.png"
+                            width="162" height="40" alt="네이버 AI 검색 큐: 지금 대기 등록하세요"></a></div>
+                <div id="shortcutArea" class="shortcut_area" role="region">
+                    <ul class="shortcut_list">
+                        <li class="shortcut_item"><a href="https://mail.naver.com" class="link_service"
+                                target="_blank"><span class="service_icon type_mail"></span><span
+                                    class="service_name">메일</span></a></li>
+                        <li class="shortcut_item"><a href="https://cafe.naver.com" class="link_service"
+                                target="_blank"><span class="service_icon type_cafe"></span><span
+                                    class="service_name">카페</span></a></li>
+                        <li class="shortcut_item"><a href="https://blog.naver.com" class="link_service"
+                                target="_blank"><span class="service_icon type_blog"></span><span
+                                    class="service_name">블로그</span></a></li>
+                        <li class="shortcut_item"><a href="https://shopping.naver.com/home" class="link_service"
+                                target="_blank"><span class="service_icon type_shopping"></span><span
+                                    class="service_name">쇼핑</span></a></li>
+                        <li class="shortcut_item"><a href="https://news.naver.com/" class="link_service"
+                                target="_blank"><span class="service_icon type_news"></span><span
+                                    class="service_name">뉴스</span></a></li>
+                        <li class="shortcut_item"><a href="https://finance.naver.com/" class="link_service"
+                                target="_blank"><span class="service_icon type_stock"></span><span
+                                    class="service_name">증권</span></a></li>
+                        <li class="shortcut_item"><a href="https://land.naver.com/" class="link_service"
+                                target="_blank"><span class="service_icon type_real"></span><span
+                                    class="service_name">부동산</span></a></li>
+                        <li class="shortcut_item"><a href="https://map.naver.com" class="link_service"
+                                target="_blank"><span class="service_icon type_map"></span><span
+                                    class="service_name">지도</span></a></li>
+                        <li class="shortcut_item"><a href="https://comic.naver.com" class="link_service"
+                                target="_blank"><span class="service_icon type_webtoon"></span><span
+                                    class="service_name">웹툰</span></a></li>
+                        <li class="shortcut_item"><a href="#" class="link_service" role="button"><span
+                                    class="service_icon type_more"></span><span class="blind">바로가기 펼침</span></a></li>
+                    </ul>
+                </div>
+                <div id="topAsideArea" class="menu_area"><button id="topAsideButton" type="button" class="btn_menu"
+                        aria-haspopup="menu" aria-expanded="false"><span class="blind">확장 영역</span></button></div>
+                <div id="topPayArea" class="pay_area"><a href="https://order.pay.naver.com/home" class="link_pay"
+                        target="_blank"><span class="blind">페이 바로가기</span></a></div>
+                <div id="topTalkArea" class="talk_area"><button type="button" class="btn_talk" aria-haspopup="menu"
+                        aria-expanded="false"><span class="blind">톡</span></button></div>
+                <div id="topNotiArea" class="notify_area"><button type="button" class="btn_notify" aria-haspopup="menu"
+                        aria-expanded="false"><span class="blind">알림</span></button></div>
+            </div>
+        </div>
 
-    <section>
-        
-    </section>
-    네이버 메인페이지
+        <div id="contents">
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
 </body>
 
 </html>
