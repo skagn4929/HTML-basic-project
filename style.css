@@ -107,8 +107,6 @@ section {
 }
 body {
     line-height: 1;
-    padding: 20px 10px;
-    border: 1px solid red;
     height: 100vh;
 }
 ol,
