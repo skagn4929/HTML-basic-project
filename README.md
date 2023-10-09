@@ -1,4 +1,4 @@
-# Naver Homepage Clone
+# Naver Clone Coding
 **[네이버](https://www.naver.com/)를 HTML과 CSS만 활용하여 클론 코딩해 보았습니다.**
 
 ---
@@ -46,7 +46,6 @@
   </script>
 ```
 
----
 
 ## 3. 결과물
 -  [Naver Homepage Clone](https://skagn4929.github.io/HTML-basic-project/)
