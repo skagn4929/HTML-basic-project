@@ -23,7 +23,7 @@
 
 <img width="1440" alt="4" src="https://github.com/skagn4929/HTML-basic-project/assets/134206709/2fb12123-8212-4f28-b972-fbeae5e237ab">
 
-- 해당 공간은 `promtion_area`를 따로 만들어 다른 방식으로 적용한다.
+- 해당 공간은 `promtion_area`를 따로 만들어 다른 방식으로 오버라이딩하여 적용한다.
 ```html
   <div id="promotion_area" onclick=""
     style="width: 100%;
