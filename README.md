@@ -48,7 +48,25 @@
 ```
 
 
-## 3. 결과물
--  [Naver Homepage Clone](https://skagn4929.github.io/HTML-basic-project/)
+## 3. 배포
+**본 프로젝트를 [AWS](https://aws.amazon.com/ko/console/)를 이용하여 배포하였습니다.**
 
-![Screenshot 2023-10-04 at 13 36 55](https://github.com/skagn4929/HTML-basic-project/assets/134206709/ca148b3e-5bf7-4992-9dda-afe8b160c12b)
+- 배포 순서
+1. [AWS](https://aws.amazon.com/ko/console/) 홈페이지 회원가입 후 로그인
+
+2. Amazon S3 -> 우측 상단의 버킷 만들기
+
+![4](https://github.com/skagn4929/HTML-basic-project/assets/134206709/94186159-6350-4ace-9575-24e9b8a6a0d2)
+
+3. 생성한 버킷에 프로젝트 파일 업로드
+
+![5](https://github.com/skagn4929/HTML-basic-project/assets/134206709/a88b6a92-6000-4183-94a3-718ed02a25e0)
+
+4. 속성 -> 정적 웹사이트 호스팅 기능 켜기
+
+![7](https://github.com/skagn4929/HTML-basic-project/assets/134206709/dce7ca33-3400-48be-b277-4001ec334ec2)
+
+5. 생성된 [웹사이트](http://mytestbucket-ki.s3-website.ap-northeast-2.amazonaws.com) 접속
+
+![8](https://github.com/skagn4929/HTML-basic-project/assets/134206709/f565400a-7060-4666-a057-559bd0135b93)
+
